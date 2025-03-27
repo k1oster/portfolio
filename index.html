@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadle Kloster - Portfolio</title>
+    <link rel="stylesheet" href="minstil.css">
+    <meta name="description" content="Portfolio av Hadle Kloster - Fotografi og kreativt arbeid">
+</head>
+
+<body>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#home">Hjem</a></li>
+            <li><a href="#bilder">Bilder</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="header-content">
+            <h1>Hadle Kloster</h1>
+            <p>Fotograf & Videograf</p>
+        </div>
+        <button class="about-trigger" onclick="toggleAbout()">Om Meg</button>
+    </header>
+
+    <main>
+        <section id="bilder" class="gallery">
+            <h2>Bilder</h2>
+            <div class="gallery-waterfall">
+                <div class="column">
+                    <figure class="gallery-item">
+                        <img src="bilder å video/A7402766.jpg" alt="Dramatisk landskapsfotografi" loading="lazy">
+                        <figcaption>Create Me</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/DSC00066.JPG" alt="Kreativt portrett" loading="lazy">
+                        <figcaption>Portrett</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/_MG_9820.jpg" alt="Kunstnerisk landskapsfotografi" loading="lazy">
+                        <figcaption>Landskap</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/IMG_9273.jpg" alt="Kunstnerisk fotografi" loading="lazy">
+                        <figcaption>Kunst</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/_DSC0520.jpg" alt="Kunstnerisk fotografi" loading="lazy">
+                        <figcaption>Kunst</figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="gallery-item">
+                        <img src="bilder å video/DSC01654.jpg" alt="Kunstnerisk komposisjon" loading="lazy">
+                        <figcaption>Mandals</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/DSC00049.jpg" alt="Kreativt portrett" loading="lazy">
+                        <figcaption>Å Energi</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/DSC09924.jpg" alt="Landskapsfotografi" loading="lazy">
+                        <figcaption>Landskap</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/IMG_9896.jpg" alt="Stemningsfullt bilde" loading="lazy">
+                        <figcaption>Stemning</figcaption>
+                    </figure>
+                </div>
+                <div class="column">
+                    <figure class="gallery-item">
+                        <img src="bilder å video/IMG_9907.JPG" alt="Kreativt fotografi" loading="lazy">
+                        <figcaption>Kreativt</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/DSC01880.jpg" alt="Detaljert nærbilde" loading="lazy">
+                        <figcaption>Lille Markens</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/IMG_6765.jpg" alt="Portrettfotografi" loading="lazy">
+                        <figcaption>Portrett</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="bilder å video/_MG_0128.png" alt="Kreativt fotografi" loading="lazy">
+                        <figcaption>Kreativt</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="gallery">
+            <h2>Video</h2>
+            <div class="gallery-grid">
+                <figure class="gallery-item video-item">
+                    <video controls>
+                        <source src="bilder å video/kunstsilo stemningsvideo.mp4" type="video/mp4">
+                        Din nettleser støtter ikke video-elementet.
+                    </video>
+                    <figcaption>Kunstsilo Stemningsvideo</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <div id="about-overlay" class="about-overlay"></div>
+    <div id="about-popup" class="about-popup">
+        <div class="about-content">
+            <button class="about-close" onclick="toggleAbout()">&times;</button>
+            <h2>Om Meg</h2>
+            <p>Jeg er en oppkommende fotograf og videograf fra Kristiansand.</p>
+        </div>
+    </div>
+
+    <footer id="kontakt">
+        <div class="contact-info">
+            <h2>KONTAKT</h2>
+            <div class="contact-details">
+                <p class="location">4636 KRISTIANSAND</p>
+                <p><a href="mailto:hadlepost@icloud.com" class="contact-link">HADLEPOST@ICLOUD.COM</a></p>
+                <p><a href="tel:+4794233677" class="contact-link">+47 942 33 677</a></p>
+                <p><button class="back-to-top" onclick="scrollToTop()">TIL TOPPEN</button></p>
+            </div>
+            <div class="copyright">
+                <p>© 2025 BY HADLE KLOSTER</p>
+                <p>KRISTIANSAND</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-controls">
+            <button class="lightbox-button close" id="closeBtn">&times;</button>
+        </div>
+        <button class="lightbox-nav prev" id="prevBtn">&#10094;</button>
+        <img class="lightbox-content" id="lightboxImg" src="" alt="Lightbox image">
+        <button class="lightbox-nav next" id="nextBtn">&#10095;</button>
+    </div>
+
+    <script>
+        // Lightbox functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            // Scroll to top on page load/refresh
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+
+            // Ensure we're at the top when the page loads
+            window.onload = function () {
+                window.scrollTo(0, 0);
+            }
+
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const closeBtn = document.getElementById('closeBtn');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const galleryImages = document.querySelectorAll('.gallery-item img');
+            let currentImageIndex = 0;
+
+            // Åpne lightbox
+            document.querySelectorAll('.gallery-item img').forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    currentImageIndex = index;
+                    lightbox.style.display = 'flex';
+                    updateNavButtons();
+                });
+            });
+
+            // Navigasjon til forrige bilde
+            function showPrevImage() {
+                if (currentImageIndex > 0) {
+                    currentImageIndex--;
+                    lightboxImg.src = galleryImages[currentImageIndex].src;
+                    updateNavButtons();
+                }
+            }
+
+            // Navigasjon til neste bilde
+            function showNextImage() {
+                if (currentImageIndex < galleryImages.length - 1) {
+                    currentImageIndex++;
+                    lightboxImg.src = galleryImages[currentImageIndex].src;
+                    updateNavButtons();
+                }
+            }
+
+            // Oppdater synlighet av navigasjonsknapper
+            function updateNavButtons() {
+                prevBtn.style.display = currentImageIndex === 0 ? 'none' : 'flex';
+                nextBtn.style.display = currentImageIndex === galleryImages.length - 1 ? 'none' : 'flex';
+            }
+
+            // Knappelyttere
+            prevBtn.addEventListener('click', showPrevImage);
+            nextBtn.addEventListener('click', showNextImage);
+
+            // Lukk lightbox
+            closeBtn.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+            });
+
+            // Lukk lightbox ved klikk utenfor bildet
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+
+            // Tastatursnarveier
+            document.addEventListener('keydown', function (e) {
+                if (lightbox.style.display === 'flex') {
+                    if (e.key === 'ArrowLeft') {
+                        showPrevImage();
+                    } else if (e.key === 'ArrowRight') {
+                        showNextImage();
+                    } else if (e.key === 'Escape') {
+                        lightbox.style.display = 'none';
+                    }
+                }
+            });
+        });
+
+        // About popup functionality
+        function toggleAbout() {
+            const popup = document.getElementById('about-popup');
+            const overlay = document.getElementById('about-overlay');
+            popup.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+
+        // Close popup when clicking overlay
+        document.getElementById('about-overlay').addEventListener('click', function () {
+            toggleAbout();
+        });
+
+        // Close popup with ESC key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                const popup = document.getElementById('about-popup');
+                const overlay = document.getElementById('about-overlay');
+                if (popup.classList.contains('active')) {
+                    toggleAbout();
+                }
+            }
+        });
+
+        // Add scroll to top functionality
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
